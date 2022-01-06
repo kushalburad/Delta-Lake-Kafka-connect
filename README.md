@@ -1,1 +1,1 @@
-# kafak_deltalake_connect
+Foodie a food classifier
