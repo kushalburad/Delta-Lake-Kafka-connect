@@ -1,4 +1,5 @@
 # Delta Lake 
+![img1](https://user-images.githubusercontent.com/53971225/149649712-fe407d88-8acc-4abb-9ff9-89e7425c42a9.png)
 
 
 # Introduction 
@@ -11,12 +12,12 @@ Osquery is the host monitoring daemon that allows you to schedule queries and re
 Apache Kafka is a community distributed event streaming platform capable of handling trillions of events a day. Initially conceived as a messaging queue, Kafka is based on an abstraction of a distributed commit log. Since being created and open-sourced by LinkedIn in 2011, Kafka has quickly evolved from messaging queue to a full-fledged event streaming platform.
 Kafka is primarily used to build real-time streaming data pipelines and applications that adapt to the data streams. It combines messaging, storage, and stream processing to allow storage and analysis of both historical and real-time data.
 
-What is Delta Lake?
+# What is Delta Lake?
 
 Delta Lake is an open-source storage layer that brings reliability to data lakes. Delta Lake provides ACID transactions, scalable metadata handling, and unifies streaming and batch data processing. Delta Lake runs on top of your existing data lake and is fully compatible with Apache Spark APIs.
 
 
-Advantages of Delta Lake 
+# Advantages of Delta Lake 
 
 ACID Transactions
 Data lakes typically have multiple data pipelines reading and writing data concurrently, and data engineers have to go through a tedious process to ensure data integrity, due to the lack of transactions. Delta Lake brings ACID transactions to your data lakes. It provides serializability, the strongest level of isolation level. Learn more at Diving into Delta Lake: Unpacking the Transaction Log.
@@ -42,14 +43,14 @@ Big data is continuously changing. Delta Lake enables you to make changes to a t
 Audit History
 Delta Lake transaction log records details about every change made to data providing a full audit trail of the changes.
 
-Delta lake Kafka integration using spark
+# Delta lake Kafka integration using spark
 We will be using Spark for consuming data from Kafka topics in streaming format. Furthermore, we will modify the streaming data present in the Kafka topic by extracting the schema from the data and converting the data into table format. Finally, we will push the modified data into Delta Lake for further use. 
  
-Result 
+# Result 
 After completing our project, we can say that Delta Lake supports streaming Osquery data furthermore, It is beneficial to use Delta Lake as it provides added benefits over a typical data lake like ACID transactions, time travel and used a Parquet file format which enhances Delta Lake performance as it is efficient in reading Data in less time as it is columnar storage and minimises latency and increases data security as data is not human-readable
 
 
-Conclusion 
+# Conclusion 
 Delta Lake can store streaming Osquery data provided by Kafka topics. Furthermore, Delta Lake provides added benefits over a typical data lake, such as ACID transactions and time travel (data versioning), which can be leveraged by data engineers. Moreover, Delta Lake is deeply integrated with Spark Structured Streaming through reading stream and write stream and Delta Lake overcomes many of the limitations typically associated with streaming systems and files, like maintaining “exactly-once” processing with more than one stream (or concurrent batch jobs) and Efficiently discovering which files are new when using files as the source for a stream. Furthermore, Delta Lake used a Parquet file format which further enhances Delta Lake's performance. Parquet file format is efficient in reading Data in less time as it is columnar storage and minimises latency.
 
 
