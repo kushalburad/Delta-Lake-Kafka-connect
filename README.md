@@ -74,11 +74,11 @@ Check the status using the below command.
 
 sudo systemctl status osqueryd
 
-### 3 Run streaming_piplie.scala using sbt packages present in the project 
+### 3 Run getstreamingdata.scala using sbt packages present in the project 
 
 Create a sbt project and configure sbt file using build.sbt file present in the project.
 
-Run the streaming_piplines.scala program for storing streaming data present in Kafka topic into delta lake file format.
+Run the getstreamingdata.scala program for storing streaming data present in Kafka topic into delta lake file format.
 
 
 
