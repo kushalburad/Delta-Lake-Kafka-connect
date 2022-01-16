@@ -56,7 +56,7 @@ Delta Lake can store streaming Osquery data provided by Kafka topics. Furthermor
 
 # Steps to run the program
 
-# 1 Install and run Kafka 
+### 1 Install and run Kafka 
 
 Commands to run kafka 
 
@@ -64,7 +64,7 @@ bin/zookeeper-server-start.sh config/zookeeper.properties
 
 ./bin/kafka-server-start.sh config/server.properties
 
-# 2 Run Osquery by using Osquery. conf and Osquery.flags present in then the project 
+### 2 Run Osquery by using Osquery. conf and Osquery.flags present in then the project 
 
 Command to run osquery and send logs into Kafka topic. 
 
@@ -74,7 +74,7 @@ Check the status using the below command.
 
 sudo systemctl status osqueryd
 
-# 3 Run streaming_piplie.scala using sbt packages present in the project 
+### 3 Run streaming_piplie.scala using sbt packages present in the project 
 
 Create a sbt project and configure sbt file using build.sbt file present in the project.
 
