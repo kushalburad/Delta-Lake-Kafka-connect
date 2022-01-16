@@ -31,6 +31,12 @@ Delta Lake provides snapshots of data enabling developers to access and revert t
 Open Format
 All data in Delta Lake is stored in Apache Parquet format enabling Delta Lake to leverage the efficient compression and encoding schemes that are native to Parquet.
 
+Z-Ordering
+
+Z-Ordering is a technique to colocate related information in the same set of files. This co-locality is automatically used by Delta Lake data-skipping algorithms to dramatically reduce the amount of data that needs to be read. 
+
+<img width="657" alt="optimized-writes" src="https://user-images.githubusercontent.com/53971225/149659107-02665800-407d-4595-92b1-8efefd5a1c7a.png">
+
 Unified Batch and Streaming Source and Sink
 A table in Delta Lake is both a batch table, as well as a streaming source and sink. Streaming data ingest, batch historic backfill, and interactive queries all just work out of the box.
 
