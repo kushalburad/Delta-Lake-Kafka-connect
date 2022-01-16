@@ -77,7 +77,7 @@ After completing our project, we can say that Delta Lake supports streaming Osqu
 Delta Lake can store streaming Osquery data provided by Kafka topics. Furthermore, Delta Lake provides added benefits over a typical data lake, such as ACID transactions and time travel (data versioning), which can be leveraged by data engineers. Moreover, Delta Lake is deeply integrated with Spark Structured Streaming through reading stream and write stream and Delta Lake overcomes many of the limitations typically associated with streaming systems and files, like maintaining “exactly-once” processing with more than one stream (or concurrent batch jobs) and Efficiently discovering which files are new when using files as the source for a stream. Furthermore, Delta Lake used a Parquet file format which further enhances Delta Lake's performance. Parquet file format is efficient in reading Data in less time as it is columnar storage and minimises latency.
 
 
-# Steps to run the project
+# Steps to run the program
 
 ### 1 Install and run Kafka 
 
