@@ -115,8 +115,8 @@ object getstreamingdata {
                           write.
                           format("delta").
                           mode(Append).
-                          option("checkpointLocation", "table location"+query_name).
-                          save("table location"+query_name)
+                          option("checkpointLocation", "tmp6"+query_name).
+                          save("tmp6"+query_name)
 
 
 
