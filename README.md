@@ -4,7 +4,9 @@
 
 # Introduction 
 In this project, we have used Delta Lake for storing streaming data which was extracted using Osquery. Delta Lake is an open-source storage layer that brings reliability to data lakes. Delta Lake provides ACID transactions, scalable metadata handling, and unifies streaming and batch data processing. Initially, we will be publishing data extracted by Osquery to Kafka topics in a streaming fashion. Furthermore, we will be consuming data present in the Kafka topic using spark and modifying the schema of the table for increasing the efficiency of delta lake. Finally, we will push the modified data into delta Lake. 
-What is Osquery?
+
+# What is Osquery?
+
 Osquery is the host monitoring daemon that allows you to schedule queries and record OS state changes. The daemon aggregates query results over time and generates logs, which indicate state change according to each query. The daemon also uses OS eventing APIs to record monitored file and directory changes, hardware events, network events, and more.
 
 # What is Kafka?
