@@ -93,7 +93,7 @@ bin/zookeeper-server-start.sh config/zookeeper.properties
 
 Command to run osquery and send logs into Kafka topic. 
 
-sudo systemctl start osqueryd.
+sudo systemctl start osqueryd
 
 Check the status using the below command. 
 
