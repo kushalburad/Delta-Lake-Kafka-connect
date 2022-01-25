@@ -32,14 +32,14 @@ object getstreamingdata {
     val tablename = "table_name"
     val basepath = "table location"
     val basepath1 = "table location"
-    val osquery_names = List("pack_system-snapshot_some_query1", "pack_system-snapshot_some_query3")
+    val osquery_names = List("pack_system-snapshot_some_query4")
     var count = 0
     val df = spark.readStream
       .format("kafka")
       .option("kafka.bootstrap.servers", "localhost:9092")
-      .option("subscribe", "Orders6")
+      .option("subscribe", "Orders1")
       .option("failOnDataLoss", "false")
-      // .option("startingOffsets", "earliest")
+      .option("startingOffsets", "earliest")
       .load()
 
 
