@@ -1,4 +1,4 @@
-name := "streaming-piplines"
+name := "Stream Handler"
 
 version := "1.0.0"
 
