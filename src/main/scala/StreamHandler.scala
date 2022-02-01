@@ -15,7 +15,7 @@ import scala.util.Try
 case class DeviceData(ts: String  ,board_version: String,computer_name: String,cpu_brand: String,cpu_logical_cores:String, cpu_microcode:String, partitionpath: String)
 
 
-object getstreamingdata {
+object StreamHandler {
   def main(args: Array[String]) {
     println("asdf")
     val spark = SparkSession.builder.
