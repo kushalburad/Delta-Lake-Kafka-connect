@@ -34,7 +34,7 @@ object StreamHandler {
       .option("kafka.bootstrap.servers", "kafka:9092")
       .option("subscribe", "Orders1")
       .option("failOnDataLoss", "false")
-      .option("startingOffsets", "earliest")
+      //.option("startingOffsets", "earliest")
       .load()
 
 
