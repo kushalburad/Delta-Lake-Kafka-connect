@@ -110,8 +110,8 @@ object StreamHandler {
               write.
               format("delta").
               mode(Append).
-              option("checkpointLocation", "/home/kushal/Desktop/tmp6"+query_name).
-              save("/home/kushal/Desktop/tmp6"+query_name)
+              option("checkpointLocation", "/tmp6"+query_name).
+              save("/tmp6"+query_name)
 
 
 
